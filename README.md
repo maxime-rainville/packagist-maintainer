@@ -1,4 +1,5 @@
-# Package maintainer script
+Package maintainer script
+========================
 
 This is a simple utility to help update packagist maintainers. Packagist doesn't provide an API to do some privileged tasks (e.g. Adding/removing maintainers). To get around that, the command require you to provide a some cookie values.
 
