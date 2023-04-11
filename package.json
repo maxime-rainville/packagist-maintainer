@@ -19,7 +19,7 @@
   "dependencies": {
     "@oclif/core": "^2",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.4.3",
+    "@oclif/plugin-plugins": "^2.4.4",
     "cheerio": "^1.0.0-rc.12",
     "node-fetch": "^3.3.1"
   },
