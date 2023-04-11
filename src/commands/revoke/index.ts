@@ -2,7 +2,9 @@ import {Args, Command, Flags, ux} from '@oclif/core'
 import Packagist from '../../lib/packagist'
 
 export default class Revoke extends Command {
-  static description = 'Revoke access for a specific maintainer'
+  static description = 'Revoke access for a specific maintainer to all ' +
+  'packages the logged-in maintainer has access to. The command will ' +
+  'warn you of what it will do before it does it.'
 
   static flags = {
     pauth: Flags.string({description: 'pauth cookie', required: true}),
@@ -36,7 +38,7 @@ export default class Revoke extends Command {
       }
     }
 
-    ux.info('\n\nDo not have access to manage these packages');
+    ux.info('\n\nDo not have access to manage these packages')
     this.log(noAccess.join('\n'))
 
     if (hasAccess.length === 0) {

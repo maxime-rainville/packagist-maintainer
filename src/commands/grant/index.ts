@@ -2,7 +2,7 @@ import {Args, Command, Flags, ux} from '@oclif/core'
 import Packagist from '../../lib/packagist'
 
 export default class Grant extends Command {
-  static description = 'Grant access for a specific maintainer to all packages within an organisation'
+  static description = 'Grant access for a specific maintainer to all packages within an organisation. The command will warn you of what it will do before it does it.'
 
   static flags = {
     pauth: Flags.string({description: 'pauth cookie', required: true}),
