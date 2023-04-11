@@ -34,17 +34,17 @@ Note that those values are likely to change while the command is running. If you
 
 # Commands
 <!-- commands -->
-* [`packagist-maintainer grant MAINTAINER ORGANISATION`](#packagist-maintainer-grant-maintainer-organisation)
-* [`packagist-maintainer help [COMMANDS]`](#packagist-maintainer-help-commands)
-* [`packagist-maintainer revoke MAINTAINER`](#packagist-maintainer-revoke-maintainer)
+* [`./bin/run grant MAINTAINER ORGANISATION`](#binrun-grant-maintainer-organisation)
+* [`./bin/run help [COMMANDS]`](#binrun-help-commands)
+* [`./bin/run revoke MAINTAINER`](#binrun-revoke-maintainer)
 
-## `packagist-maintainer grant MAINTAINER ORGANISATION`
+## `./bin/run grant MAINTAINER ORGANISATION`
 
 Grant access for a specific maintainer to all packages within an organisation. The command will warn you of what it will do before it does it.
 
 ```
 USAGE
-  $ packagist-maintainer grant MAINTAINER ORGANISATION --pauth <value> --packagist <value>
+  $ ./bin/run grant MAINTAINER ORGANISATION --pauth <value> --packagist <value>
 
 ARGUMENTS
   MAINTAINER    Packagist maintainer to grant access to
@@ -61,13 +61,13 @@ DESCRIPTION
 
 _See code: [dist/commands/grant/index.ts](https://github.com/maxime-rainville/packagist-maintainer/blob/v0.0.0/dist/commands/grant/index.ts)_
 
-## `packagist-maintainer help [COMMANDS]`
+## `./bin/run help [COMMANDS]`
 
-Display help for packagist-maintainer.
+Display help for ./bin/run.
 
 ```
 USAGE
-  $ packagist-maintainer help [COMMANDS] [-n]
+  $ ./bin/run help [COMMANDS] [-n]
 
 ARGUMENTS
   COMMANDS  Command to show help for.
@@ -76,18 +76,18 @@ FLAGS
   -n, --nested-commands  Include all nested commands in the output.
 
 DESCRIPTION
-  Display help for packagist-maintainer.
+  Display help for ./bin/run.
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.2.8/src/commands/help.ts)_
 
-## `packagist-maintainer revoke MAINTAINER`
+## `./bin/run revoke MAINTAINER`
 
 Revoke access for a specific maintainer to all packages the logged-in maintainer has access to. The command will warn you of what it will do before it does it.
 
 ```
 USAGE
-  $ packagist-maintainer revoke MAINTAINER --pauth <value> --packagist <value>
+  $ ./bin/run revoke MAINTAINER --pauth <value> --packagist <value>
 
 ARGUMENTS
   MAINTAINER  Packagist maintainer to fetch data for
